@@ -1,0 +1,146 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+    {
+    	"path": "pages/album/index",
+    	"style": {
+    		"navigationBarTitleText": "专辑详情"
+    	}
+    },
+    {
+      "path": "pages/imgDetail/index",
+      "style": {
+        "navigationBarTitleText": "图片详情"
+      }
+    },
+    {
+      "path": "pages/imgCategory/index",
+      "style": {
+        "navigationBarTitleText": "分类详情"
+      }
+    },
+    {
+      "path": "pages/videoCategory/index",
+      "style": {
+        "navigationBarTitleText": "视频分类"
+      }
+    },
+		{
+			"path": "pages/horizontal/index",
+			"style": {
+				"navigationBarTitleText": "横屏"
+			}
+		},
+		{
+			"path": "pages/video/index",
+			"style": {
+				"navigationBarTitleText": "视频"
+			}
+		},{
+      "path": "pages/videoPlay/index",
+      "style": {
+        "navigationBarTitleText": "视频播放"
+      }
+    },
+		{
+			"path": "pages/search/index",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+	    ,{
+            "path" : "pages/home/home-recommend/index",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/home/home-category/index",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/home/home-new/index",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/home/home-album/index",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "看图吗",
+		"navigationBarBackgroundColor": "#000"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#ff007f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+   //    {
+			// "pagePath": "pages/home/index",
+			// "iconPath": "static/image/home.png",
+			// "selectedIconPath": "static/image/home-fill.png",
+			// "text": "首页"
+   //    }, {
+   //      "pagePath": "pages/horizontal/index",
+   //      "iconPath": "static/image/like.png",
+   //      "selectedIconPath": "static/image/like_fill.png",
+   //      "text": "横屏"
+   //    }, {
+   //      "pagePath": "pages/video/index",
+   //      "iconPath": "static/image/cam.png",
+   //      "selectedIconPath": "static/image/cam-fill.png",
+   //      "text": "视频"
+   //    }, {
+   //      "pagePath": "pages/search/index",
+   //      "iconPath": "static/image/search.png",
+   //      "selectedIconPath": "static/image/search.png",
+   //      "text": "搜索"
+   //    }, {
+   //      "pagePath": "pages/mine/index",
+   //      "iconPath": "static/image/mine.png",
+   //      "selectedIconPath": "static/image/mine-fill.png",
+   //      "text": "我的"
+   //    }
+   {
+     "pagePath": "pages/home/index",
+     "text": "首页",
+     "iconPath": "./static/icon/_home.png",
+     "selectedIconPath": "./static/icon/home.png"
+   },
+   {
+     "pagePath": "pages/video/index",
+     "text": "视频",
+     "iconPath": "./static/icon/_videocamera.png",
+     "selectedIconPath": "./static/icon/videocamera.png"
+   },
+   {
+     "pagePath": "pages/mine/index",
+     "text": "我的",
+     "iconPath": "./static/icon/_my.png",
+     "selectedIconPath": "./static/icon/my.png"
+   }
+    ]
+	},
+  "condition" : { //模式配置，仅开发期间生效
+    "current": 0, //当前激活的模式(list 的索引项)
+    "list": [
+      {
+        "name": "", //模式名称
+        "path": "", //启动页面，必选
+        "query": "" //启动参数，在页面的onLoad函数里面得到
+      }
+    ]
+  }
+}
